@@ -1,0 +1,6 @@
+@api_knowledge_check_HostAddress = http://localhost:5014
+
+GET {{api_knowledge_check_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
