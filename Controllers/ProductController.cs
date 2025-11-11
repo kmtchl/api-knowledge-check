@@ -14,7 +14,7 @@ public class ProductsController(IProductRepository productRepository, IProductVa
         var product = productRepository.GetById(id);
         if (product == null) return NotFound($"Product with id {id} does not exist");
 
-        return new ProductGetDto() { Name = product.Name, Price = product.Price };
+        return Ok(new ProductGetDto() { Name = product.Name, Price = product.Price });
     }
 
     [HttpPut("{id}")]
