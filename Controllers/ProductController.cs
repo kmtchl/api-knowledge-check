@@ -26,7 +26,7 @@ public class ProductsController(IProductRepository productRepository, IProductVa
         var validationResult = validator.Validate(productDto);
         if (!validationResult.IsValid)
         {
-            logger.LogError(string.Join(",", validationResult.Errors));
+            logger.LogWarning(string.Join(",", validationResult.Errors));
             return BadRequest(validationResult.Errors);
         }
 
@@ -62,7 +62,7 @@ public class ProductsController(IProductRepository productRepository, IProductVa
     {
         if (id <= 0)
         {
-            logger.LogError("Product Id sent that is less than or equal to 0: {id}", id);
+            logger.LogWarning("Product Id sent that is less than or equal to 0: {id}", id);
             return BadRequest("Product Id cannot be less than or equal to 0");
         }
         
