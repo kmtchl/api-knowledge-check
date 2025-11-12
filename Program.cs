@@ -11,6 +11,7 @@ builder.Services.AddControllers();
 builder.Services.AddSingleton<IProductValidator, ProductValidator>();
 builder.Services.AddSingleton<IProductRepository, ProductRepository>();
 
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -20,5 +21,6 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+app.UseMiddleware<ErrorHandlingMiddleware>();
 app.MapControllers();
 app.Run();
