@@ -1,6 +1,3 @@
-using Microsoft.AspNetCore.Http.HttpResults;
-using Microsoft.AspNetCore.Mvc;
-
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("api-knowledge-check")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dc1534dad769074f8433b743130597697de281ec")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f907fdce9321026cc474522848c14541cd30b85a")]
 [assembly: System.Reflection.AssemblyProductAttribute("api-knowledge-check")]
 [assembly: System.Reflection.AssemblyTitleAttribute("api-knowledge-check")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,6 +1,6 @@
 public class ProductRepository : IProductRepository
 {
-    private static List<Product> _products = new()
+    private List<Product> _products = new()
     {
         new(1, "Mouse", 25.5m),
         new(2, "Keyboard", 15.9m)
